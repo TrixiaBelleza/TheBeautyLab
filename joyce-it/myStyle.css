@@ -1,0 +1,175 @@
+#site-background {
+	background-color: #d4c5bb;
+	height:990px;
+	width:100px;
+	overflow-y: scroll;
+
+}
+
+#site-foreground {
+    position:fixed;
+    top: 0;
+    left: 20%;
+    width:78.5em;
+    height:990px;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: 	#d2b48c;
+    overflow-y: scroll;
+}
+
+#logo {
+	color : white;
+	text-align: center;
+	font-size: 42px;
+	font-family: 'Lobster', cursive;
+	/*font-family: Lobster;*/
+}
+
+#logo-beauty {
+	margin-top: 200px;
+	height:100px;
+	width: 100px;
+}
+
+#navigation {
+	height: 40px;
+	width: 74em;
+	margin-top: 100px;
+	background-color:  #d2b48c;
+	margin-left: 32px;
+}
+
+.navbar-div {
+	height: 1px;
+	width: 74em;
+	margin-left: 32px;
+	background-color: white;
+}
+
+#home {
+	margin-left: 250px;
+}
+
+.nav-button {
+	margin-left: 122px;
+	line-height: 30px;
+	text-decoration: none;
+	color : white;
+	font-size: 20px;
+}
+
+#homepic1 {
+	margin-top: 70px;
+	width: 581px;
+	height: 516px;
+    margin-left: 122px;
+    position: absolute;
+    margin-bottom: 600px;
+    z-index: -1;
+}
+
+#lengthwise1 {
+	height: 516px;
+	margin-top: 70px;
+   	margin-bottom: 300px;	
+   	margin-left: 722px;
+ 	position: relative;
+ 	z-index: -2;
+}
+
+.circle {
+	border-radius: 100%;
+	height: 200px;
+	width: 200px;
+	margin-top: -800px;
+	margin-left: 605px;
+   	margin-bottom: 300px;
+   	background:#708230;
+   	z-index: 3;
+   	font-size: 29px;
+  	color: #fff;
+  	line-height: 160px;
+  	text-align: center;
+  	font-family: 'Amatic SC', cursive;
+  	
+}
+
+#daily {
+	margin-top:  -90px;
+	line-height: 100px;
+	font-family: 'Satisfy', cursive;
+}
+
+#bottom-line {
+	margin-top: 30px;
+}
+
+#fb {
+	margin-top:  -10px;
+	line-height: 100px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 33px;
+	color: white;
+}
+
+#call {
+	margin-top:  -155px;
+	line-height: 100px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 33px;
+	color: white;
+	margin-left: 650px;
+}
+
+
+#hello {
+	margin-top:  -150px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 33px;
+	color: white;
+	margin-left: 1000px;
+}
+
+#fb-icon {
+	height : 50px;
+	width: 50px;
+	margin-left: 20px;
+	margin-top: -40px;
+}
+
+#twitter {
+	height: 50px;
+	width: 60px;
+	margin-left: 40px;
+	margin-top: -40px;
+}
+
+#insta {
+	height: 50px;
+	width: 55px;
+	margin-left: 40px;
+	margin-top: -40px;
+}
+
+#contact {
+	margin-top: -70px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 33px;
+	color: white;
+	margin-left: 550px;
+}
+.slide-container {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.slide-img {
+	margin-top: 20px;
+	height : 200px;
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+
+}
