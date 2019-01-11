@@ -176,21 +176,15 @@
 
 		function carousel() {
 			var home_img = document.getElementsByClassName("homepic"); //home_img = [homepic-1.jpg, homepic-2.jpg, homepic-3.jpg, homepic-4.jpg]
-			
-			//Set all display of home_img to none. This hides all home images
-			for (var i = 0; i < home_img.length; i++) {
-				home_img[i].style.display = "none";
-			}
-			index++; //Point to next image
 
 			if (index > home_img.length) {
 				//Points to first home_img again.
-				index = 1;
+				index = 0;
 			}
-			home_img[index-1].style.display = "block"; //display image you are pointing to. Kaya siya index-1, kasi 0 indexing
+			home_img[index].style.display = "block"; //display image you are pointing to. Kaya siya index-1, kasi 0 indexing
 			setTimeout(carousel, 1500); //change image every 1.5 seconds
+			index++; //Point to next image index = index + 1
 		}
-
 	</script>
 
 </body>
