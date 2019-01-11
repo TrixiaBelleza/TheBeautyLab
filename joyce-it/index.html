@@ -6,7 +6,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-	 <link rel = "stylesheet" type = "text/css" href = "myStyle.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "myStyle.css"/>
 </head>
 <body id="site-background">
 	<div id="site-foreground">
@@ -39,6 +39,9 @@
 
 		<div id="images-div">
 			<img class="homepic" id="homepic1" src="homepic-1.jpg" />
+			<img class="homepic" id="homepic2" src="homepic-2.jpg" />
+			<img class="homepic" id="homepic3" src="homepic-3.jpg" />
+			<img class="homepic" id="homepic4" src="homepic-4.jpg" />	
 			<img class="lengthwise" id="lengthwise1" src="lengthwise.jpeg" />
 		</div>
 
@@ -51,32 +54,144 @@
 		</div>
 
 		<div class="slide-container">
-
-			<img class="slide-img" src="1.jpg" />
-			<img class="slide-img" src="2.jpg" />
-			<img class="slide-img" src="3.jpg" />
-			<img class="slide-img" src="4.jpg" />
-			<img class="slide-img" src="5.jpg" />
-			<img class="slide-img" src="6.jpg" />
+			<div id="container1" class="inner-container">
+				<img class="slide-img" src="1.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container2">
+				<img class="slide-img" src="2.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container3">
+				<img class="slide-img" src="3.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container4">
+				<img class="slide-img" src="4.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container5">
+				<img class="slide-img" src="5.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container6">
+				<img class="slide-img" src="6.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container7">
+				<img class="slide-img" src="7.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
+			<div id="container8">
+				<img class="slide-img" src="8.jpg" />
+				
+				<div class="middle">
+					<button class="text">Buy</button>
+				</div>
+				<div class="product-details">
+					<center>
+					<h6 class="price"> P170 </h6>
+					</center>
+				</div>	
+			</div>
 		</div>
 		<div id="bottom-line" class="navbar-div">
 		</div>
 		<center>
 		<div id="footer">
 	    <h5 id="fb"> Follow us on </h5>
-	    	<img id="fb-icon" src="fb-icon.png" />
-	    	<img id="twitter" src="twtter.png" />
-	    	<img id="insta" src="ins.png" />
-
-		<!-- <h6 id="call"> Call Now </h6>
-		<h6 id="contact"> 0929-862-4204 </h6>
-	 -->
+	    	<a href="#">
+	    		<img id="fb-icon" src="fb-icon.png" />
+	    	</a>
+	    	<a href="#">
+	    		<img id="twitter" src="twtter.png" />
+	    	</a>
+	    	<a href="#">
+	    		<img id="insta" src="ins.png" />
+	    	</a>
 		</div>
 		</center>
 	</div>
-	
 
+	<!-- Placing scripts at the bottom of the <body> element improves the display speed, because script compilation slows down the display. -->
+	<script>
+		var index = 0;
+		carousel();
 
-	
+		function carousel() {
+			var home_img = document.getElementsByClassName("homepic"); //home_img = [homepic-1.jpg, homepic-2.jpg, homepic-3.jpg, homepic-4.jpg]
+			
+			//Set all display of home_img to none. This hides all home images
+			for (var i = 0; i < home_img.length; i++) {
+				home_img[i].style.display = "none";
+			}
+			index++; //Point to next image
+
+			if (index > home_img.length) {
+				//Points to first home_img again.
+				index = 1;
+			}
+			home_img[index-1].style.display = "block"; //display image you are pointing to. Kaya siya index-1, kasi 0 indexing
+			setTimeout(carousel, 1500); //change image every 1.5 seconds
+		}
+
+	</script>
+
 </body>
 </html>
