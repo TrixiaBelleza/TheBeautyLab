@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> The Beauty Lab </title>
+	<link href="https://fonts.googleapis.com/css?family=Economica" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link rel = "stylesheet" type = "text/css" href = "myStyle.css"/>
+	<link rel = "stylesheet" type = "text/css" href = "contact-us.css"/>
+</head>
+<body id="site-background">
+	<div id="site-foreground">
+		<center>
+			<img id=logo-beauty src="beauty.png"/>
+		</center>
+		<h1 id="logo"> The Beauty Lab </h1>
+
+		<div id="navigation">
+			<a id="home" class="nav-button" href="index.html">
+				HOME
+			</a>
+
+			<a id="about-us" class="nav-button" href="about.html">
+				ABOUT US
+			</a>
+
+			<a id="shop" class="nav-button" href="#">
+				SHOP
+			</a>
+			
+
+			<a id="contact-us" class="nav-button" href="contact-us.html">
+				CONTACT US
+			</a>
+
+		</div>
+		<div class="navbar-div">
+		</div>
+
+		<div class="address-section">
+			<h1 style="color:white;"> Contact </h1>
+			<p class="address-details"> Blk 8 Lot 27 Aratelis St., </p>
+			<p class="address-details"> Mutual Homes, Brgy. Putatan </p>
+			<p class="address-details"> Muntinlupa City </p>
+			<p class="address-details"> 0949 862 4204 </p>
+			<br />
+		</div>
+
+		<div class ="form-section">
+			<input type="text" class="form-field" id="name" name="name" placeholder="Name">
+			<input type="text" class="form-field" id="email" name="email" placeholder="Email">
+			<input type="text" class="form-field" id="subject" name="subject" placeholder="Subject">
+			<br />
+			<textarea class="form-field" id="subject" name="subject" placeholder="Write something..." 
+			style="height:150px; resize:none;"></textarea>
+			<br />
+			<button class="form-field" style="width:70px; background-color: white;" onclick="alertSubmit()"> Submit </button>
+		</div>
+		<script>
+			function alertSubmit(){
+				alert("Successfully submitted!")
+			}
+		</script>
+
+</body>
+</html>

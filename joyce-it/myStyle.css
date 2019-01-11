@@ -2,8 +2,6 @@
 	background-color: #d4c5bb;
 	height:990px;
 	width:100px;
-	overflow: auto;
-
 }
 
 #site-foreground {
@@ -11,7 +9,7 @@
     top: 0;
     left: 20%;
     width:78.5em;
-    height:990px;
+    height:800px;
     margin-top: -9em; /*set to a negative number 1/2 of your height*/
     margin-left: -15em; /*set to a negative number 1/2 of your width*/
     border: 1px solid #ccc;
@@ -25,7 +23,6 @@
 	font-size: 32px;
 	font-family: 'Lobster', cursive;
 	margin-top: 5px;
-	/*font-family: Lobster;*/
 }
 
 #logo-beauty {
@@ -192,7 +189,7 @@
 }
 
 #container3:hover .middle {
-  opacity: 1;
+ 	opacity: 1;
 }
 
 #container4 {
