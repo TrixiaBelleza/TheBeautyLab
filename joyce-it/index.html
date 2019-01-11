@@ -11,7 +11,9 @@
 <body id="site-background">
 	<div id="site-foreground">
 		<center>
-			<img id=logo-beauty src="beauty.png"/>
+			<a href="index.html">
+				<img id=logo-beauty src="beauty.png"/>
+			</a>
 		</center>
 		<h1 id="logo"> The Beauty Lab </h1>
 
@@ -24,7 +26,7 @@
 				ABOUT US
 			</a>
 
-			<a id="shop" class="nav-button" href="#">
+			<a id="shop" class="nav-button" href="shop.html">
 				SHOP
 			</a>
 			
@@ -58,7 +60,7 @@
 				<img class="slide-img" src="1.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -70,7 +72,7 @@
 				<img class="slide-img" src="2.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -82,7 +84,7 @@
 				<img class="slide-img" src="3.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -94,7 +96,7 @@
 				<img class="slide-img" src="4.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -106,7 +108,7 @@
 				<img class="slide-img" src="5.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -118,7 +120,7 @@
 				<img class="slide-img" src="6.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -130,7 +132,7 @@
 				<img class="slide-img" src="7.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -142,7 +144,7 @@
 				<img class="slide-img" src="8.jpg" />
 				
 				<div class="middle">
-					<button class="text">Buy</button>
+					<button onclick="buyproduct()" class="text">Buy</button>
 				</div>
 				<div class="product-details">
 					<center>
@@ -190,6 +192,11 @@
 			home_img[index-1].style.display = "block"; //display image you are pointing to. Kaya siya index-1, kasi 0 indexing
 			setTimeout(carousel, 1500); //change image every 1.5 seconds
 		}
+
+		function buyproduct(){
+			alert("Thank you for purchasing product!");
+		}
+
 
 	</script>
 
